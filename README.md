@@ -5,6 +5,6 @@ Tools for Foam and figure plot
 
 For Linux, please run 'run.sh' script.
 
-**What can you do using this codes**
+**What can you do using these codes**
 - Plot figures in SCI style.
 - Run OpenFoam case automatically.
