@@ -156,6 +156,13 @@ def getTime(path='.'):
             continue
         timesString.append(all_items[strI])
     numeric_folders = timesString
+    
+    indexed_numbers = [(i, float(num)) for i, num in enumerate(numeric_folders)]
+    sorted_numbers = sorted(indexed_numbers, key=lambda x: x[1])
+    original_indices = [item[0] for item in sorted_numbers]
+    temp = numeric_folders
+    for n in range(len(temp)):
+        numeric_folders[n] = temp[original_indices[n]]
     return numeric_folders
 
 def checkYplus(log=True):
